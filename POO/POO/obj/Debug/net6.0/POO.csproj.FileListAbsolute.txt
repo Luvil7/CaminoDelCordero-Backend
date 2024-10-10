@@ -1,0 +1,14 @@
+D:\caminoCordero\POO\POO\bin\Debug\net6.0\POO.exe
+D:\caminoCordero\POO\POO\bin\Debug\net6.0\POO.deps.json
+D:\caminoCordero\POO\POO\bin\Debug\net6.0\POO.runtimeconfig.json
+D:\caminoCordero\POO\POO\bin\Debug\net6.0\POO.dll
+D:\caminoCordero\POO\POO\bin\Debug\net6.0\POO.pdb
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.GeneratedMSBuildEditorConfig.editorconfig
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.AssemblyInfoInputs.cache
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.AssemblyInfo.cs
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.csproj.CoreCompileInputs.cache
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.dll
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\refint\POO.dll
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.pdb
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\POO.genruntimeconfig.cache
+D:\caminoCordero\POO\POO\obj\Debug\net6.0\ref\POO.dll

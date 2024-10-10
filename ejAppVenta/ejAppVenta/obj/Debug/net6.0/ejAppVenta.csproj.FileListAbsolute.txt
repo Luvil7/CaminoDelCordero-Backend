@@ -1,0 +1,14 @@
+D:\caminoCordero\ejAppVenta\ejAppVenta\bin\Debug\net6.0\ejAppVenta.exe
+D:\caminoCordero\ejAppVenta\ejAppVenta\bin\Debug\net6.0\ejAppVenta.deps.json
+D:\caminoCordero\ejAppVenta\ejAppVenta\bin\Debug\net6.0\ejAppVenta.runtimeconfig.json
+D:\caminoCordero\ejAppVenta\ejAppVenta\bin\Debug\net6.0\ejAppVenta.dll
+D:\caminoCordero\ejAppVenta\ejAppVenta\bin\Debug\net6.0\ejAppVenta.pdb
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.GeneratedMSBuildEditorConfig.editorconfig
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.AssemblyInfoInputs.cache
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.AssemblyInfo.cs
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.csproj.CoreCompileInputs.cache
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.dll
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\refint\ejAppVenta.dll
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.pdb
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ejAppVenta.genruntimeconfig.cache
+D:\caminoCordero\ejAppVenta\ejAppVenta\obj\Debug\net6.0\ref\ejAppVenta.dll

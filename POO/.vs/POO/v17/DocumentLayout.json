@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\caminoCordero\\POO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3322E537-ABC5-4CE7-8D13-E6D0207A1B00}|POO\\POO.csproj|d:\\caminocordero\\poo\\poo\\crearusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3322E537-ABC5-4CE7-8D13-E6D0207A1B00}|POO\\POO.csproj|solutionrelative:poo\\crearusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3322E537-ABC5-4CE7-8D13-E6D0207A1B00}|POO\\POO.csproj|d:\\caminocordero\\poo\\poo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3322E537-ABC5-4CE7-8D13-E6D0207A1B00}|POO\\POO.csproj|solutionrelative:poo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrearUsuarios.cs",
+              "DocumentMoniker": "D:\\caminoCordero\\POO\\POO\\CrearUsuarios.cs",
+              "RelativeDocumentMoniker": "POO\\CrearUsuarios.cs",
+              "ToolTip": "D:\\caminoCordero\\POO\\POO\\CrearUsuarios.cs",
+              "RelativeToolTip": "POO\\CrearUsuarios.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAzwDMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T13:47:37.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\caminoCordero\\POO\\POO\\Program.cs",
+              "RelativeDocumentMoniker": "POO\\Program.cs",
+              "ToolTip": "D:\\caminoCordero\\POO\\POO\\Program.cs",
+              "RelativeToolTip": "POO\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwv2IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T13:02:06.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
