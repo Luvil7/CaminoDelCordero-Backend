@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\repository\\usuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\repository\\usuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\repository\\productohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\repository\\productohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\controllers\\dtos\\putusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\controllers\\dtos\\putusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\controllers\\dtos\\postusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\controllers\\dtos\\postusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|c:\\users\\lucas\\caminodelcordero-backend\\miprimeraapi\\miprimeraapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5833653-CCC1-4FF2-9EBB-0202DA48D96D}|MiPrimeraApi\\MiPrimeraApi.csproj|solutionrelative:miprimeraapi\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:13:00.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Models\\Producto.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:12:53.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\DTOS\\PostUsuario.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Controllers\\DTOS\\PostUsuario.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\DTOS\\PostUsuario.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Controllers\\DTOS\\PostUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:04:06.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PutUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\DTOS\\PutUsuario.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Controllers\\DTOS\\PutUsuario.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\DTOS\\PutUsuario.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Controllers\\DTOS\\PutUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:03:57.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:03:01.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoHandler.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Repository\\ProductoHandler.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Repository\\ProductoHandler.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Repository\\ProductoHandler.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Repository\\ProductoHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:02:36.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowD0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:02:52.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioHandler.cs",
+              "DocumentMoniker": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Repository\\UsuarioHandler.cs",
+              "RelativeDocumentMoniker": "MiPrimeraApi\\Repository\\UsuarioHandler.cs",
+              "ToolTip": "C:\\Users\\LUCAS\\CaminoDelCordero-Backend\\MiPrimeraApi\\MiPrimeraApi\\Repository\\UsuarioHandler.cs",
+              "RelativeToolTip": "MiPrimeraApi\\Repository\\UsuarioHandler.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:02:25.475Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
