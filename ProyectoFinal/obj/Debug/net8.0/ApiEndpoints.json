@@ -1,0 +1,128 @@
+[
+  {
+    "ContainingType": "ProyectoFinal.Controllers.LicenciaController",
+    "Method": "GetLicencias",
+    "RelativePath": "Licencia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoFinal.Models.Licencia, ProyectoFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetLicencias"
+  },
+  {
+    "ContainingType": "ProyectoFinal.Controllers.LicenciaController",
+    "Method": "DeleteLicencia",
+    "RelativePath": "Licencia",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteLicencia"
+  },
+  {
+    "ContainingType": "ProyectoFinal.Controllers.LicenciaController",
+    "Method": "ModifyLicencia",
+    "RelativePath": "Licencia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencia",
+        "Type": "ProyectoFinal.Controllers.DTOS.PutLicencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoFinal.Controllers.LicenciaController",
+    "Method": "AddLicencia",
+    "RelativePath": "Licencia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencia",
+        "Type": "ProyectoFinal.Controllers.DTOS.PostLicencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoFinal.Controllers.SoldadoController",
+    "Method": "ModifySoldado",
+    "RelativePath": "Soldado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soldado",
+        "Type": "ProyectoFinal.Controllers.DTOS.PutSoldado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
