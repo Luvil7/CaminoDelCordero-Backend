@@ -9,13 +9,95 @@
     public class SoldadoHandler
     {
 
-        public const string ConnectionString = @"Server=DESKTOP-LUCAS1\SQLEXPRESS;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
+        public const string ConnectionString = @"Server=10.108.30.15;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
 
+        public static List<Soldado> GetSoldados()
+        {
+            List<Soldado> resultado = new List<Soldado>();
+            try
+            {
+                using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand())
+                    {
+                        sqlCommand.Connection = sqlConnection;
+                        sqlCommand.CommandText = @"
+                    SELECT 
+                      *
+                    FROM Soldados;
+                    ";
+
+                        sqlConnection.Open();
+                        SqlDataAdapter adapter = new SqlDataAdapter();
+                        adapter.SelectCommand = sqlCommand;
+                        DataTable table = new DataTable();
+                        adapter.Fill(table);
+
+                        foreach (DataRow row in table.Rows)
+                        {
+                            try
+                            {
+                                Soldado soldado = new Soldado
+                                {
+                                    Id = Convert.ToInt32(row["Id"]),
+                                    Dni = Convert.ToInt32(row["Dni"]),
+                                    Nombre = row["Nombre"].ToString(),
+                                    Apellido = row["Apellido"].ToString()
+                                };
+                                
+
+                                resultado.Add(soldado);
+                            }
+                            catch (Exception rowEx)
+                            {
+                                Console.WriteLine($"Error procesando fila: {rowEx.Message}");
+                            }
+                        }
+                        sqlConnection.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en GetSoldados: {ex.Message}");
+            }
+            return resultado;
+        }
+
+
+
+        public static string DeleteSoldado(int dni)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
+            {
+                string queryDelete = "DELETE FROM Soldados WHERE Dni = @idSoldado";
+                SqlParameter sqlParameter = new SqlParameter("idSoldado", System.Data.SqlDbType.Int);
+                sqlParameter.Value = dni;
+                sqlConnection.Open();
+                using (SqlCommand sqlCommand = new SqlCommand(queryDelete, sqlConnection))
+                {
+                    sqlCommand.Parameters.Add(sqlParameter);
+                    int rowsAffected = sqlCommand.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        string mensaje = $"El soldado con DNI: {dni} se eliminó correctamente";
+                        Console.WriteLine(mensaje);
+                        return mensaje;
+                    }
+                    return $"No se encontró ningun Soldado con DNI: {dni}";
+                }
+            }
+        }
 
         public static string UpdateSoldado(Soldado soldado)
         {
             try
             {
+                string dniStr = soldado.Dni.ToString();
+                if (dniStr.Length < 8 || dniStr.Length > 9)
+                {
+                    throw new ValidationException("El DNI debe tener entre 8 y 9 caracteres");
+                }
                 using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
                 {
                     sqlConnection.Open();
@@ -92,52 +174,41 @@
         }
 
 
-        public static string AddLicencia(Licencia licencia)
+        public static string AddSoldado(Soldado soldado)
         {
+            string dniStr = soldado.Dni.ToString();
+            if (dniStr.Length < 8 || dniStr.Length > 9)
+            {
+                throw new ValidationException("El DNI debe tener entre 8 y 9 caracteres");
+            }
             try
             {
                 using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
                 {
                     sqlConnection.Open();
 
-                    string checkDniQuery = "SELECT COUNT(1) FROM Soldados WHERE Dni = @Dni";
-                    using (SqlCommand checkCommand = new SqlCommand(checkDniQuery, sqlConnection))
-                    {
-                        checkCommand.Parameters.AddWithValue("@Dni", licencia.SoldadoDni);
-                        int exists = (int)checkCommand.ExecuteScalar();
-                        if (exists == 0)
-                        {
-                            return $"Error de validación: No existe un soldado con el DNI {licencia.SoldadoDni}";
-                        }
-                    }
-                    LicenciaValidationHandler.ValidateLicencia(licencia);
 
                     string queryInsert = @"
-                INSERT INTO Licencias 
-                    (SoldadoDni, FechaInicio, FechaFin, Tipo, Provincia, Localidad, Dir, OD)
-                    VALUES (@SoldDni, @FechaI, @FechaF, @Tipo, @Provincia,@Localidad,@Dir,@OD)
+                INSERT INTO Soldados
+                    (Dni, Nombre, Apellido)
+                    VALUES (@newDni, @newNombre, @newApellido)
                 
 
-                SELECT SCOPE_IDENTITY() as Id, 'La licencia se agregó correctamente' as Result;";
+                SELECT SCOPE_IDENTITY() as Id, 'El soldado se agregó correctamente' as Result;";
 
                     using (SqlCommand sqlCommand = new SqlCommand(queryInsert, sqlConnection))
                     {
-                        sqlCommand.Parameters.AddWithValue("@SoldDni", licencia.SoldadoDni);
-                        sqlCommand.Parameters.AddWithValue("@FechaI", licencia.FechaInicio);
-                        sqlCommand.Parameters.AddWithValue("@FechaF", licencia.FechaFin);
-                        sqlCommand.Parameters.AddWithValue("@Tipo", licencia.Tipo);
-                        sqlCommand.Parameters.AddWithValue("@Provincia", licencia.Provincia);
-                        sqlCommand.Parameters.AddWithValue("@Localidad", licencia.Localidad);
-                        sqlCommand.Parameters.AddWithValue("@Dir", licencia.Dir);
-                        sqlCommand.Parameters.AddWithValue("@OD", licencia.OD);
-
+                        sqlCommand.Parameters.AddWithValue("@newDni", soldado.Dni);
+                        sqlCommand.Parameters.AddWithValue("@newNombre", soldado.Nombre);
+                        sqlCommand.Parameters.AddWithValue("@newApellido", soldado.Apellido);
+                   
                         using (var reader = sqlCommand.ExecuteReader())
                         {
                             if (reader.Read())
                                 return reader["Result"].ToString();
                         }
 
-                        return "Error al agregar la licencia";
+                        return "Error al agregar al Soldado";
                     }
                 }
             }
@@ -147,8 +218,8 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al agregar la licencia: {ex.ToString()}");
-                return $"Error al agregar la licencia: {ex.Message}";
+                Console.WriteLine($"Error al agregar el soldado: {ex.ToString()}");
+                return $"Error al agregar el soldado: {ex.Message}";
             }
         }
     }

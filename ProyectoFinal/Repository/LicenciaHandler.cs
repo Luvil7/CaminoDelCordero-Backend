@@ -7,7 +7,8 @@
 
     public static class LicenciaHandler
     {
-        public const string ConnectionString = @"Server=DESKTOP-LUCAS1\SQLEXPRESS;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
+        public const string ConnectionString = @"Server=U3465-VPN011\SQLEXPRESS;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
+
 
         public static List<Licencia> GetLicencias()
         {

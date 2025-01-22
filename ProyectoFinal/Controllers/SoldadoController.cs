@@ -12,6 +12,39 @@ namespace ProyectoFinal.Controllers
     public class SoldadoController : Controller
     {
 
+        [HttpGet(Name = "GetSoldados")]
+        public List<Soldado> GetSoldados()
+        {
+            try
+            {
+                return SoldadoHandler.GetSoldados();
+            }
+            catch (Exception ex)
+
+            {
+                Console.WriteLine(ex.Message);
+                return new List<Soldado>();
+
+            }
+
+        }
+
+
+        [HttpDelete(Name = "DeleteSoldado")]
+        public ActionResult<string> DeleteSoldado([FromBody] int dni)
+        {
+            try
+            {
+                string resultado = SoldadoHandler.DeleteSoldado(dni);
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return BadRequest("No se pudo eliminar la licencia debido a un error en el servidor");
+            }
+        }
+
         [HttpPut]
         public ActionResult<string> ModifySoldado([FromBody] PutSoldado soldado)
         {
@@ -46,20 +79,16 @@ namespace ProyectoFinal.Controllers
 
 
         [HttpPost]
-        public ActionResult<string> AddLicencia([FromBody] PostLicencia licencia)
+        public ActionResult<string> AddSoldado([FromBody] PostSoldado soldado)
         {
             try
             {
-                return LicenciaHandler.AddLicencia(new Licencia
+                return SoldadoHandler.AddSoldado(new Soldado
                 {
-                    SoldadoDni = licencia.SoldadoDni,
-                    FechaFin = licencia.FechaFin,
-                    FechaInicio = licencia.FechaInicio,
-                    Tipo = licencia.Tipo,
-                    Provincia = licencia.Provincia,
-                    Localidad = licencia.Localidad,
-                    Dir = licencia.Dir,
-                    OD = licencia.OD,
+                    Dni = soldado.Dni,
+                    Nombre = soldado.Nombre,
+                    Apellido = soldado.Apellido,
+                    
                 });
             }
             catch (Exception ex)
