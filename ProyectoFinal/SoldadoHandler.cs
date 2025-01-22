@@ -9,8 +9,7 @@
     public class SoldadoHandler
     {
 
-        //public const string ConnectionString = @"Server=DESKTOP-LUCAS1\SQLEXPRESS;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
-        public const string ConnectionString = @"Server=U3465-VPN011\SQLEXPRESS;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
+        public const string ConnectionString = @"Server=10.108.30.15;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
 
         public static List<Soldado> GetSoldados()
         {
@@ -94,6 +93,11 @@
         {
             try
             {
+                string dniStr = soldado.Dni.ToString();
+                if (dniStr.Length < 8 || dniStr.Length > 9)
+                {
+                    throw new ValidationException("El DNI debe tener entre 8 y 9 caracteres");
+                }
                 using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
                 {
                     sqlConnection.Open();
@@ -172,6 +176,11 @@
 
         public static string AddSoldado(Soldado soldado)
         {
+            string dniStr = soldado.Dni.ToString();
+            if (dniStr.Length < 8 || dniStr.Length > 9)
+            {
+                throw new ValidationException("El DNI debe tener entre 8 y 9 caracteres");
+            }
             try
             {
                 using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
