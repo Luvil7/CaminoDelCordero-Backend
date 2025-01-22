@@ -9,7 +9,8 @@
     public class SoldadoHandler
     {
 
-        public const string ConnectionString = @"Server=10.108.30.15;Database=GestionLicencias;Integrated Security=True;TrustServerCertificate=True;";
+        public const string ConnectionString = @"Server=10.108.30.15;Database=Lucas_v;user=testuser;password=qwertu;TrustServerCertificate=True;";
+
 
         public static List<Soldado> GetSoldados()
         {
